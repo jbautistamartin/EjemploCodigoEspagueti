@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("Ejemplo Codigo Espagueti 1")]
-[assembly: AssemblyDescription("Ejemplo Codigo Espagueti 1")]
+[assembly: AssemblyTitle("Ejemplo Codigo Espagueti 2")]
+[assembly: AssemblyDescription("Ejemplo Codigo Espagueti 2")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Desde Las Horas Extras")]
-[assembly: AssemblyProduct("DesdeLasHorasExtras.EjemploCodigoEspagueti1")]
+[assembly: AssemblyProduct("DesdeLasHorasExtras.EjemploCodigoEspagueti2")]
 [assembly: AssemblyCopyright("Copyright © Desde Las Horas Extras,  2019")]
 [assembly: AssemblyTrademark("Desde Las Horas Extras")]
 [assembly: AssemblyCulture("")]
