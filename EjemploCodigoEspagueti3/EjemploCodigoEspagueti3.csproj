@@ -90,8 +90,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EjemploCodigoEspaguetiModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="GestorMensajes.cs" />
-    <Compile Include="ModoGuardado.cs" />
+    <Compile Include="Mensajes\GestorMensajesArchivoPlano.cs" />
+    <Compile Include="Mensajes\GestorMensajesBaseDatos.cs" />
+    <Compile Include="Mensajes\GestorMensajesVisorEventos.cs" />
+    <Compile Include="Mensajes\GestorMensajes.cs" />
+    <Compile Include="Mensajes\ModoGuardado.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

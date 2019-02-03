@@ -42,7 +42,7 @@ namespace DesdeLasHorasExtras.EjemploCodigoEspagueti2
         /// Guarda el mensaje dentro de un archivo plano
         /// </summary>
         /// <param name="mensaje">Mensaje a guardar</param>
-        private static void GuardarArchivoPlano(string mensaje)
+        private void GuardarArchivoPlano(string mensaje)
         {
             string directorioArchivo = AppDomain.CurrentDomain.BaseDirectory;
             string rutaArchivo = Path.Combine(directorioArchivo, "bitacora.txt");
@@ -53,7 +53,7 @@ namespace DesdeLasHorasExtras.EjemploCodigoEspagueti2
         /// <summary>
         /// Configura la base de datos, creandola si no existe
         /// </summary>
-        private static void ConfigurarBaseDatos()
+        private void ConfigurarBaseDatos()
         {
             using (EjemploCodigoEspaguetiEntities context = new EjemploCodigoEspaguetiEntities())
             {
@@ -70,7 +70,7 @@ namespace DesdeLasHorasExtras.EjemploCodigoEspagueti2
         /// Guarda el mensaje dentro de una base de datos
         /// </summary>
         /// <param name="mensaje">Mensaje a guardar</param>
-        private static void GuardarBaseDatos(string mensaje)
+        private void GuardarBaseDatos(string mensaje)
         {
             using (EjemploCodigoEspaguetiEntities context = new EjemploCodigoEspaguetiEntities())
             {
@@ -85,7 +85,7 @@ namespace DesdeLasHorasExtras.EjemploCodigoEspagueti2
         /// <summary>
         /// Crea la fuente para el visor de eventos.
         /// </summary>
-        private static void ConfigurarVisorEventos()
+        private void ConfigurarVisorEventos()
         {
             //Si no existe en memoria lo creo
             string source = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name;
@@ -100,7 +100,7 @@ namespace DesdeLasHorasExtras.EjemploCodigoEspagueti2
         /// Guarda el mensaje en el visor de eventos de windows
         /// </summary>
         /// <param name="mensaje">Mensaje a guardar</param>
-        private static void GuardarVisorEventos(string mensaje)
+        private void GuardarVisorEventos(string mensaje)
         {
             ConfigurarVisorEventos();
             string source = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name;
