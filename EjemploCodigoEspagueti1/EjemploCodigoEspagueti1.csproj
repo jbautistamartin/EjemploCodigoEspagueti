@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DesdeLasHorasExtras.EjemploCodigoEspagueti1</RootNamespace>
-    <AssemblyName>EjemploCodigoEspagueti</AssemblyName>
+    <AssemblyName>EjemploCodigoEspagueti1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -38,7 +38,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>3</WarningLevel>
     <Prefer32Bit>true</Prefer32Bit>
-    <DocumentationFile>bin\Debug\EjemploCodigoEspagueti.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\EjemploCodigoEspagueti1.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,7 +48,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Release\EjemploCodigoEspagueti.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\EjemploCodigoEspagueti1.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
