@@ -9,6 +9,11 @@ namespace DesdeLasHorasExtras.EjemploCodigoEspagueti1
     /// </summary>
     public class GestorMensajes
     {
+        /// <summary>
+        /// Guarda el mensaje segun el metodo que se indica como parametro
+        /// </summary>
+        /// <param name="modo">Modo para guardar</param>
+        /// <param name="mensaje">Mensaje a guardar</param>
         public void Guardar(ModoGuardado modo, string mensaje)
         {
             if (modo == ModoGuardado.ArchivoPlano) //Guardo la información en el archivo de texto
@@ -48,6 +53,10 @@ namespace DesdeLasHorasExtras.EjemploCodigoEspagueti1
                 System.Diagnostics.EventLog appLog = new System.Diagnostics.EventLog();
                 appLog.Source = source;
                 appLog.WriteEntry(mensaje);
+            }
+            else
+            {
+                throw new InvalidOperationException($"No se reconoce el tipo de guardado {modo}");
             }
         }
     }
