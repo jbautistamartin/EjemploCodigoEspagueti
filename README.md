@@ -6,6 +6,7 @@ Código ejemplo para el blog Desde las horas extras http://desdelashorasextras.b
 
 Este código es un ejemplo del llamado "Código Espagueti", y muestra paso a paso como eliminarlo, se puede encontrar mas información en la entrada del blog:
 
+https://desdelashorasextras.blogspot.com/2019/02/regla-n18-de-la-ingenieria-de-software.html
 
 
 El código Espagueti es aquel que tiene un control de flujo demasiado complicado para entenderlo claramente, además de que son prácticamente imposibles de modificar por miedo a que mientras cambiamos algo se estropee otra cosa. El código esta enredado tal como un plato de espagueti, se llega a esta situación (en la actualidad), a base de agregar sentencias "if" encadenas, grandes y complejas. Ya de por sí, tener dos "if" encadenados aumenta la complejidad del código y la dificultad de mantenerlo.
