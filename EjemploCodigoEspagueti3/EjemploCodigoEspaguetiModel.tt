@@ -24,6 +24,9 @@ foreach (var entity in typeMapper.GetItemsToGenerate<EntityType>(itemCollection)
     BeginNamespace(code);
 #>
 <#=codeStringGenerator.UsingDirectives(inHeader: false)#>
+/// <summary>
+/// Clase <#=entity#>
+/// </summary>
 <#=codeStringGenerator.EntityClassOpening(entity)#>
 {
 <#
@@ -70,6 +73,13 @@ foreach (var entity in typeMapper.GetItemsToGenerate<EntityType>(itemCollection)
         foreach (var edmProperty in simpleProperties)
         {
 #>
+
+	/// <summary>
+	/// Propiedad edmProperty.
+	/// </summary>
+	/// <value>
+	/// Valor de la propiedad edmProperty.
+	/// </value>
     <#=codeStringGenerator.Property(edmProperty)#>
 <#
         }

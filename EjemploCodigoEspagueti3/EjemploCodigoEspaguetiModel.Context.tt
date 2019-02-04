@@ -53,8 +53,15 @@ using System.Linq;
 }
 #>
 
+/// <summary>
+/// Base de datos de ejemplo de entity framework
+/// </summary>
+/// <seealso cref="System.Data.Entity.DbContext" />
 <#=Accessibility.ForType(container)#> partial class <#=code.Escape(container)#> : DbContext
 {
+	/// <summary>
+	/// Constructor por defecto.
+	/// </summary>
     public <#=code.Escape(container)#>()
         : base("name=<#=container.Name#>")
     {

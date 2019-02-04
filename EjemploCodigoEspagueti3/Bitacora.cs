@@ -12,9 +12,26 @@ namespace DesdeLasHorasExtras.EjemploCodigoEspagueti3
     using System;
     using System.Collections.Generic;
     
+    /// <summary>
+    /// Clase EjemploCodigoEspaguetiModel.Bitacora
+    /// </summary>
     public partial class Bitacora
     {
+    
+    	/// <summary>
+    	/// Propiedad edmProperty.
+    	/// </summary>
+    	/// <value>
+    	/// Valor de la propiedad edmProperty.
+    	/// </value>
         public int Id { get; set; }
+    
+    	/// <summary>
+    	/// Propiedad edmProperty.
+    	/// </summary>
+    	/// <value>
+    	/// Valor de la propiedad edmProperty.
+    	/// </value>
         public string mensaje { get; set; }
     }
 }

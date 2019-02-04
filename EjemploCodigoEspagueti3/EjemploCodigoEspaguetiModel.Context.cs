@@ -13,8 +13,15 @@ namespace DesdeLasHorasExtras.EjemploCodigoEspagueti3
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
+    /// <summary>
+    /// Base de datos de ejemplo de entity framework
+    /// </summary>
+    /// <seealso cref="System.Data.Entity.DbContext" />
     public partial class EjemploCodigoEspaguetiEntities : DbContext
     {
+    	/// <summary>
+    	/// Constructor por defecto.
+    	/// </summary>
         public EjemploCodigoEspaguetiEntities()
             : base("name=EjemploCodigoEspaguetiEntities")
         {
