@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
 
 namespace DesdeLasHorasExtras.EjemploCodigoEspagueti3
@@ -7,7 +6,7 @@ namespace DesdeLasHorasExtras.EjemploCodigoEspagueti3
     /// <summary>
     /// Gestor de mensajes, su misión es guardar mensajes de bitacora en diversos medios.
     /// </summary>
-    public class GestorMensajesBaseDatos
+    public class GestorMensajesBaseDatos : GestorMensajes
     {
         /// <summary>
         /// Contructor por defecto
@@ -38,7 +37,7 @@ namespace DesdeLasHorasExtras.EjemploCodigoEspagueti3
         /// Guarda el mensaje segun el metodo que se indica como parametro
         /// </summary>
         /// <param name="mensaje">Mensaje a guardar</param>
-        public void Guardar(string mensaje)
+        public override void Guardar(string mensaje)
         {
             using (EjemploCodigoEspaguetiEntities context = new EjemploCodigoEspaguetiEntities())
             {
